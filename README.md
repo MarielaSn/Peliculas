@@ -1,7 +1,7 @@
 # Peliculas
 
 ## Descripción general
-Películas es una aplicación desarrollada con que permite visualizar información sobre películas. La aplicación permite explorar títulos, ver detalles y mantener un registro de películas favoritas.
+Películas es una aplicación desarrollada con Ionic que permite visualizar información sobre películas. La aplicación permite explorar títulos, ver detalles y mantener un registro de películas favoritas.
 
 ---
 

@@ -23,4 +23,8 @@ Películas es una aplicación desarrollada con Ionic que permite visualizar info
 ```bash
 git clone https://github.com/MarielaSn/Peliculas.git
 cd Peliculas
+```
+
+2. **Ejecución local**
+```bash
 ionic serve 

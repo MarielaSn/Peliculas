@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { IonicStorageModule } from '@ionic/storage-angular';
+
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [AppComponent],
@@ -19,6 +21,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
+    IonicStorageModule.forRoot()
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

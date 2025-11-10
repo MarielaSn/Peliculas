@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImagenPipe } from '../pipes/imagen-pipe';
 import { ParesPipe } from './pares-pipe';
+import { FiltroImagenPipe } from './filtro-imagen-pipe';
 
 
 @NgModule({
@@ -9,12 +10,14 @@ import { ParesPipe } from './pares-pipe';
   ],
   exports: [
     ImagenPipe,
-    ParesPipe
+    ParesPipe,
+    FiltroImagenPipe
   ],
   imports: [
     CommonModule,
     ImagenPipe,
-    ParesPipe
+    ParesPipe,
+    FiltroImagenPipe
   ]
 })
 export class PipesModule { }

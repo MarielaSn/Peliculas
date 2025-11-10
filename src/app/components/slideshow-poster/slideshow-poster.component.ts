@@ -2,8 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Pelicula } from 'src/app/interfaces/interfaces';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, ModalController } from '@ionic/angular';
 import { PipesModule } from 'src/app/pipes/pipes-module';
+import { DetalleComponent } from '../detalle/detalle.component';
 
 @Component({
   selector: 'app-slideshow-poster',
@@ -17,8 +18,21 @@ export class SlideshowPosterComponent  implements OnInit {
 
   @Input() peliculas: Pelicula[] = [];
 
-  constructor() { }
+  constructor( private modalController: ModalController ) { }
 
   ngOnInit() {}
+
+    async verDetalle( id: string ) {
+
+      const modal = await this.modalController.create({
+        component: DetalleComponent,
+        componentProps: {
+          id
+        }
+      });
+
+      modal.present();
+
+    }
 
 }
